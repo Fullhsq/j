@@ -1,0 +1,349 @@
+
+.container {
+    width: 107.5rem;
+    margin: 0 auto;
+}
+.header {
+    display: grid;
+    grid-template-columns: 11.875rem 4.375rem 8rem 7.625rem 7.5rem 9.5rem 11.9375rem 39.9375rem 9.25rem; 
+    grid-template-rows: 5rem;
+}
+.logo {
+    display: flex;
+    grid-column: 1/3;
+}
+.logo_h3 {
+    font-size: 1.25rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #38426C;
+    position: relative;left: -1.25rem;
+}
+.h3_nav_element {
+    font-family: 'Inter' , sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #38426C;
+    text-decoration: none;
+    position: relative;
+    top: 20%;
+}
+.autor {
+    grid-column: 3/3;
+}
+.logo_tel{
+    grid-column: 7/8;
+    margin-top: .4375rem;
+    display: flex;
+    align-items: baseline;
+    gap: .625rem;
+}
+.logo_h32 {
+    font-size: 1.125rem;
+    position: relative;
+    top: -0.4375rem;
+    font-family: 'Inter' , sans-serif;
+    font-size: 1.125rem;
+    color: #38426C;
+}
+.h3_nav_country {
+    font-family: 'Inter' , sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #38426C;
+    word-spacing: 1.875rem;
+    grid-column: 9/10;
+}
+.form{
+    width: 47rem;
+    height: 5.0625rem;
+    font-family: 'Inter' , sans-serif;
+    font-size: 1.25rem;
+    color: #ffffff;
+    padding: 3.125rem;
+    margin-top: -6.25rem;
+}
+.form_input,
+.form_button {
+    font-family: 'Inter' , sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #000000;
+}
+.form_group{
+    position: relative;
+}
+.form_group:focus{
+    border: none;
+}
+.banner_books{
+    display: none;
+}
+.form_label{
+    position: absolute;
+    left: 0;
+    padding: 1.875rem ;
+    z-index: -1;
+    color: rgb(155, 155, 155);
+    transition: 0.3s;
+    border: whitesmoke;
+}
+.form_input{
+    width: 38.625rem;
+    height: 4.75rem;
+    background-color: transparent;
+    transition: 0.3s;
+    border: none;
+}
+.form_button{
+    position: relative;
+    top: -4.9375rem;
+    left: 38.625rem;
+    width: 8.375rem;
+    height: 5rem;
+    background: #2E69E3;
+    border-radius: 0rem .9375rem .9375rem 0rem;
+    transition: 0.3s;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.form_input:focus ~ .form_label {
+    top: -1.25rem;
+    color: rgb(204, 204, 204);
+    transition: 0.3s;
+    font-size: .9375rem;
+    
+}
+.banner{
+    background: url(../img/Image.png);
+    width: 107.5rem;
+    height: 33.75rem;
+    border-radius: .9375rem;
+}
+.banner_search{
+    width: 49.25rem;
+}
+.h1_banner {
+    font-family: 'Inter';
+    padding: 3.125rem;
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 4.25rem;
+    letter-spacing: 0.03em;
+    color: #38426C;
+    width: 62.5rem;
+}
+.banner_p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    letter-spacing: -0.01em;
+    color: #38426C;
+    padding: 3.125rem;
+}
+.recomended {
+}
+.text_recomended {
+    position: relative;
+    top: 6.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.recomendation {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    color: #38426C;
+}
+.show {
+    display: flex;
+    height: 30px;
+    gap: 20px;
+    width: 300px;
+    position: relative;
+    top: 30px;
+    justify-content: start;
+    align-items: center;
+}
+.show_more {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #2E69E3;
+}
+.books{
+    position: relative;
+    top: 150px;
+    display: grid;
+    grid-template-columns: 20.438rem 20.438rem 20.438rem 20.438rem 20.438rem;
+}
+@media (max-width: 1200px) {
+    .container{
+        width: 920px;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 11.875rem 4.375rem 8rem 7.625rem 7.5rem 9.5rem 11.9375rem 39.9375rem 9.25rem; 
+        grid-template-rows: 5rem;
+    }
+    .h3_nav_country {
+        font-family: 'Inter' , sans-serif;
+        font-weight: 600;
+        font-size: 1.125rem;
+        color: #38426C;
+        word-spacing: 1.875rem;
+        grid-column: 7/8;
+    }
+    .logo_tel{
+        display: none;
+    }
+    .form{
+        width: 47rem;
+        height: 5.0625rem;
+        font-family: 'Inter' , sans-serif;
+        font-size: 1.25rem;
+        color: #ffffff;
+        padding: 3.125rem;
+        margin-top: -6.25rem;
+    }
+    .form_input,
+    .form_button {
+        font-family: 'Inter' , sans-serif;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: #000000;
+    }
+    .form_group{
+        position: relative;
+    }
+    .form_group:focus{
+        border: none;
+    }
+    .form_label{
+        position: absolute;
+        left: 0;
+        padding: 1.875rem ;
+        z-index: -1;
+        color: rgb(155, 155, 155);
+        transition: 0.3s;
+        border: whitesmoke;
+    }
+    .form_input{
+        width: 25.625rem;
+        height: 4.75rem;
+        background-color: transparent;
+        transition: 0.3s;
+        border: none;
+    }
+    .form_button{
+        position: relative;
+        top: -4.9375rem;
+        left: 25.625rem;
+        width: 8.375rem;
+        height: 5rem;
+        background: #2E69E3;
+        border-radius: 0rem .9375rem .9375rem 0rem;
+        transition: 0.3s;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+    }
+    .form_input:focus ~ .form_label {
+        top: -1.25rem;
+        color: rgb(204, 204, 204);
+        transition: 0.3s;
+        font-size: .9375rem;
+    }
+    .banner{
+        width: 57.5rem;
+        height: 33.75rem;
+        border-radius: .9375rem;
+        border-bottom: 3px solid grey;
+        margin-top: -30px;
+    }
+    .banner_search{
+        width: 49.25rem;
+    }
+    .h1_banner {
+        font-family: 'Inter';
+        padding: 3.125rem;
+        font-weight: 800;
+        font-size: 3.5rem;
+        line-height: 4.25rem;
+        letter-spacing: 0.03em;
+        color: #38426C;
+        width: 62.5rem;
+    }
+    .banner_p {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        letter-spacing: -0.01em;
+        color: #38426C;
+        padding: 3.125rem;
+    }
+    .recomended {
+        padding: 3.125rem;
+    }
+    .text_recomended {
+        position: relative;
+        top: 6.5rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .recomendation {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.01em;
+        color: #38426C;
+    }
+    .show {
+        display: flex;
+        height: 30px;
+        gap: 20px;
+        width: 300px;
+        position: relative;
+        top: 30px;
+        justify-content: start;
+        align-items: center;
+    }
+    .show_more {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #2E69E3;
+    }
+    .books{
+        position: relative;
+        top: 150px;
+        display: grid;
+        grid-template-columns: 23.438rem 23.438rem;
+        grid-template-rows: 375px;    
+        column-gap: 200px;
+    }
+    .banner_books{
+        display: block;
+        position: relative;
+        bottom: 230px;
+        left: 100%;
+    }
+    .jj{
+        display: none;
+    }
+}
